@@ -1,5 +1,33 @@
-template-repository (1.0-1) unstable; urgency=medium
+fonts-cabinsketch (1.02-3) unstable; urgency=medium
 
-  * Initial release
+  * debian/control
+    - Update Maintainer address
+    - Remove Christian Perrier from Uploaders (Closes: #927650)
+    - Use dh13
+    - Set Standards-Version: 4.5.0
+    - Update Vcs-* to point salsa.debian.org
+    - Add Rules-Requires-Root: no
+  * debian/copyright
+    -Use https for copyright format URL
+  * debian/rules
+    - Use default compression
+  * Add debian/salsa-ci.yml
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Hideki Yamane <henrich@debian.org>  Mon, 27 Jul 2020 03:54:23 +0900
+
+fonts-cabinsketch (1.02-2) unstable; urgency=low
+
+  * Update Standards to 3.9.4 (checked)
+  * Bump debhelper compatibility to 9
+  * Add Multi-Arch: foreign field
+  * Use xz extreme compression for deb packages
+  * Use git for packaging: adapt Vcs-* fields
+  * Add myself to Uploaders
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 16 Aug 2013 12:34:43 +0200
+
+fonts-cabinsketch (1.02-1) unstable; urgency=low
+
+  * Initial release (Closes: #666133)
+
+ -- Bernhard Reiter <ockham@raz.or.at>  Wed, 28 Mar 2012 21:31:38 +0200
